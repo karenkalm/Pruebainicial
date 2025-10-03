@@ -23,7 +23,7 @@ jobs:
       run: dotnet publish  necesitoayudalanetayanoquierovivi.csproj -c Release -o release --nologo
     
     # 3. Desplegar los archivos a la rama gh-pages (el destino final)
-    - name: Deploy to GitHub Pages
+    - name: Deploy to GitHub Pages A
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
