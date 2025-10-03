@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "necesitoayudalanetayanoquierovivi",
   "resources": {
-    "hash": "sha256-cdlhyeVuxSgfoQheyni/e+xvnBQ4s0+gh7DnRZ2pmrg=",
+    "hash": "sha256-yRMfKseMTChthzNUsiYdJzqnPSjov5pce91FjrUYFtk=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-D0bzod5lwwSzPR43JC8TTCcZKw+3jIHOk8CZFCRj5is="
     },
@@ -209,10 +209,10 @@
       "mscorlib.wasm": "sha256-8qWtIcy8fV43tlcx4DxsF45RlkcfK6588vVoxF7be2E=",
       "netstandard.wasm": "sha256-eOgz2RiO4YaPLOMIGgVLNrcfsQhmLQJzR0N7Pu2teXc=",
       "System.Private.CoreLib.wasm": "sha256-F8T63QCIbMPXPQPqTcuyBAw+oVvZSrWjy88j7fiJQZ4=",
-      "necesitoayudalanetayanoquierovivi.wasm": "sha256-BYq4Sub67UmL0TGmv+uYFEc83GnxiK+9u5GV7aHqS6I="
+      "necesitoayudalanetayanoquierovivi.wasm": "sha256-Aggacnlj06cQFncgjDM4RC3CQUdRQ39mPa2oZtVWloc="
     },
     "pdb": {
-      "necesitoayudalanetayanoquierovivi.pdb": "sha256-QYYEC2oc++0Zpz3Nxerb5Mw5QTQETOJkFhRq+HA+23U="
+      "necesitoayudalanetayanoquierovivi.pdb": "sha256-g4FX2aYvCImJ2JU6he5G8wkownKo8WGNKlalVFmeFT8="
     }
   },
   "cacheBootResources": true,

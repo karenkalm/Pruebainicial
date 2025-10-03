@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "HTNWY16n",
+  "version": "fkk7M86M",
   "assets": [
     {
       "hash": "sha256-m6VBzomwJ8u1t/U0EJ/mVEyOVXBRnbZHse7Nm+2x6tI=",
@@ -758,7 +758,7 @@ self.assetsManifest = {
       "url": "_framework/WindowsBase.wasm"
     },
     {
-      "hash": "sha256-qjhgT4Oau4B3a3OffpNBhoOx/u2Miih03Q03aOsyU0o=",
+      "hash": "sha256-H7zq1H5MrWNwQ1j+1ZyIBr91vsT8jEuqC5do+ySfwzg=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -810,11 +810,11 @@ self.assetsManifest = {
       "url": "_framework/mscorlib.wasm"
     },
     {
-      "hash": "sha256-QYYEC2oc++0Zpz3Nxerb5Mw5QTQETOJkFhRq+HA+23U=",
+      "hash": "sha256-g4FX2aYvCImJ2JU6he5G8wkownKo8WGNKlalVFmeFT8=",
       "url": "_framework/necesitoayudalanetayanoquierovivi.pdb"
     },
     {
-      "hash": "sha256-BYq4Sub67UmL0TGmv+uYFEc83GnxiK+9u5GV7aHqS6I=",
+      "hash": "sha256-Aggacnlj06cQFncgjDM4RC3CQUdRQ39mPa2oZtVWloc=",
       "url": "_framework/necesitoayudalanetayanoquierovivi.wasm"
     },
     {

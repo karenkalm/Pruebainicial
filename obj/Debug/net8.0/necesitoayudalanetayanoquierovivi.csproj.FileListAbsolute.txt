@@ -1042,6 +1042,7 @@ C:\Users\Colibecas\source\repos\necesitoayudalanetayanoquierovivi\necesitoayudal
 C:\Users\Colibecas\source\repos\necesitoayudalanetayanoquierovivi\necesitoayudalanetayanoquierovivi\obj\Debug\net8.0\scopedcss\Pages\Tabla.razor.rz.scp.css
 C:\Users\Colibecas\source\repos\necesitoayudalanetayanoquierovivi\necesitoayudalanetayanoquierovivi\obj\Debug\net8.0\scopedcss\Pages\Grafica.razor.rz.scp.css
 C:\Users\Colibecas\source\repos\necesitoayudalanetayanoquierovivi\necesitoayudalanetayanoquierovivi\obj\Debug\net8.0\scopedcss\Pages\Busqueda.razor.rz.scp.css
-C:\Users\Colibecas\source\repos\necesitoayudalanetayanoquierovivi\necesitoayudalanetayanoquierovivi\obj\Debug\net8.0\compressed\wg1mu3qphr-3adnbak9pj.gz
-C:\Users\Colibecas\source\repos\necesitoayudalanetayanoquierovivi\necesitoayudalanetayanoquierovivi\obj\Debug\net8.0\compressed\ebqwyas6tl-x8kbrsyt10.gz
-C:\Users\Colibecas\source\repos\necesitoayudalanetayanoquierovivi\necesitoayudalanetayanoquierovivi\obj\Debug\net8.0\compressed\p0l2lwf56m-mdwz6dx2di.gz
+C:\Users\Colibecas\source\repos\necesitoayudalanetayanoquierovivi\necesitoayudalanetayanoquierovivi\obj\Debug\net8.0\necesitoayudalanetayanoquierovivi.sourcelink.json
+C:\Users\Colibecas\source\repos\necesitoayudalanetayanoquierovivi\necesitoayudalanetayanoquierovivi\obj\Debug\net8.0\compressed\wg1mu3qphr-e5wlis7b5u.gz
+C:\Users\Colibecas\source\repos\necesitoayudalanetayanoquierovivi\necesitoayudalanetayanoquierovivi\obj\Debug\net8.0\compressed\ebqwyas6tl-pdpczwjn4o.gz
+C:\Users\Colibecas\source\repos\necesitoayudalanetayanoquierovivi\necesitoayudalanetayanoquierovivi\obj\Debug\net8.0\compressed\p0l2lwf56m-rt7i8rncs4.gz
