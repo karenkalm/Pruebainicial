@@ -1,0 +1,116 @@
+﻿@page "/TipoTarjeta"
+
+<h2>tipo Tarjeta</h2>
+
+<div class="clientes-container">
+    @foreach (var cliente in clientes)
+    {
+        <div class="cv-card">
+            <div class="cv-left">
+                <img src="@cliente.FotoUrl" alt="Foto de @cliente.Nombre" />
+            </div>
+
+            <div class="cv-right">
+                <h3>@cliente.Nombre</h3>
+                <p class="prof">@cliente.Profesion</p>
+
+                <h4>📌 Experiencia</h4>
+                <ul>
+                    @foreach (var exp in cliente.Experiencia)
+                    {
+                        <li>@exp</li>
+                    }
+                </ul>
+
+                <h4>🎓 Educación</h4>
+                <ul>
+                    @foreach (var edu in cliente.Educacion)
+                    {
+                        <li>@edu</li>
+                    }
+                </ul>
+
+                <h4>📞 Contacto</h4>
+                <p>Email: <a href="mailto:@cliente.Email">@cliente.Email</a></p>
+                <p>Tel: @cliente.Telefono</p>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    public class Cliente
+    {
+        public string Nombre { get; set; } = "";
+        public string Profesion { get; set; } = "";
+        public string FotoUrl { get; set; } = "";
+        public List<string> Experiencia { get; set; } = new();
+        public List<string> Educacion { get; set; } = new();
+        public string Email { get; set; } = "";
+        public string Telefono { get; set; } = "";
+    }
+
+    private List<Cliente> clientes = new()
+    {
+        new Cliente {
+            Nombre = "Juan Pérez",
+            Profesion = "Ingeniero en",
+            FotoUrl = "https://i.pinimg.com/236x/62/19/91/621991e768567862c3f2b5ba5b4ed9c2.jpg",
+         Experiencia = new() {
+                "Contadora en ",
+                "Supervisora en"
+            },
+            Educacion = new() {
+                "Lic. en",
+                "Diplomado en "
+            },
+            Email = "anita@example.com",
+            Telefono = "+52 xxxxxxx"
+        },
+        new Cliente {
+            Nombre = "María López",
+            Profesion = "Diseñadora en",
+            FotoUrl = "https://karlacsphotography.com/wp-content/uploads/2020/03/MG_3442_2.jpg",
+           Experiencia = new() {
+                "Contadora en ",
+                "Supervisora en"
+            },
+            Educacion = new() {
+                "Lic. en",
+                "Diplomado en "
+            },
+            Email = "anita@example.com",
+            Telefono = "+52 xxxxxxx"
+        },
+        new Cliente {
+            Nombre = "Carlos Gómez",
+            Profesion = "Administrador de Proyectos",
+            FotoUrl = "https://www.modelos-de-curriculum.com/wp-content/uploads/2020/10/foto-para-curriculum-vitae.jpg",
+           Experiencia = new() {
+                "Contadora en ",
+                "Supervisora en"
+            },
+            Educacion = new() {
+                "Lic. en",
+                "Diplomado en "
+            },
+            Email = "carilitos@example.com",
+            Telefono = "+52 xxxxxxx"
+        },
+        new Cliente {
+            Nombre = "Anita",
+            Profesion = "personita3000",
+            FotoUrl = "https://karlacsphotography.com/wp-content/uploads/2020/03/MG_3442_2.jpg",
+            Experiencia = new() {
+                "Contadora en ",
+                "Supervisora en"
+            },
+            Educacion = new() {
+                "Lic. en",
+                "Diplomado en "
+            },
+            Email = "anita@example.com",
+            Telefono = "+52 xxxxxxx"
+        }
+    };
+}

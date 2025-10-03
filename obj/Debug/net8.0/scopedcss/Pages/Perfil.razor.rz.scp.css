@@ -1,0 +1,65 @@
+.cv-layout[b-28l1fpdin8] {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* 🔥 Dos columnas */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Perfil a la izquierda */
+.cv-profile[b-28l1fpdin8] {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+    .cv-profile img[b-28l1fpdin8] {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .cv-profile h3[b-28l1fpdin8] {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #2c3e50;
+    }
+
+    .cv-profile .prof[b-28l1fpdin8] {
+        font-style: italic;
+        color: #16a085;
+    }
+
+/* Tarjetas de info */
+.cv-info[b-28l1fpdin8] {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card[b-28l1fpdin8] {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+    .info-card h4[b-28l1fpdin8] {
+        margin-top: 0;
+        color: #2c3e50;
+    }
+
+    .info-card ul[b-28l1fpdin8] {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .cv-layout[b-28l1fpdin8] {
+        grid-template-columns: 1fr; /* 🔥 Se apila en 1 columna */
+    }
+}

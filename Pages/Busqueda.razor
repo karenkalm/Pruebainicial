@@ -1,0 +1,86 @@
+﻿@page "/Busqueda"
+
+<h2>Búsqueda de Clientes</h2>
+
+<input type="text" placeholder="Buscar por nombre o profesión..."
+       @bind="filtro" class="search-input" />
+
+<div class="clientes-container">
+    @foreach (var cliente in clientesFiltrados)
+    {
+        <div class="cv-card">
+            <div class="cv-left">
+                <img src="@cliente.FotoUrl" alt="Foto de @cliente.Nombre" />
+            </div>
+
+            <div class="cv-right">
+                <h3>@cliente.Nombre</h3>
+                <p class="prof">@cliente.Profesion</p>
+
+                <h4>📌 Experiencia</h4>
+                <ul>
+                    @foreach (var exp in cliente.Experiencia)
+                    {
+                        <li>@exp</li>
+                    }
+                </ul>
+
+                <h4>🎓 Educación</h4>
+                <ul>
+                    @foreach (var edu in cliente.Educacion)
+                    {
+                        <li>@edu</li>
+                    }
+                </ul>
+
+                <h4>📞 Contacto</h4>
+                <p>Email: <a href="mailto:@cliente.Email">@cliente.Email</a></p>
+                <p>Tel: @cliente.Telefono</p>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private string filtro = "";
+
+    private List<Cliente> clientesFiltrados => string.IsNullOrWhiteSpace(filtro)
+        ? clientes
+        : clientes.Where(c =>
+            c.Nombre.Contains(filtro, StringComparison.OrdinalIgnoreCase) ||
+            c.Profesion.Contains(filtro, StringComparison.OrdinalIgnoreCase)
+          ).ToList();
+
+    private List<Cliente> clientes = new()
+    {
+        new Cliente {
+            Nombre = "Juan Pérez",
+            Profesion = "Ingeniero en Sistemas",
+            FotoUrl = "https://i.pinimg.com/236x/62/19/91/621991e768567862c3f2b5ba5b4ed9c2.jpg",
+            Experiencia = new() { "Contadora en Empresa X", "Supervisora en Empresa Y" },
+            Educacion = new() { "Lic. en Sistemas", "Diplomado en Gestión" },
+            Email = "juan@example.com",
+            Telefono = "+52 1234567890"
+        },
+        new Cliente {
+            Nombre = "María López",
+            Profesion = "Diseñadora Gráfica",
+            FotoUrl = "https://karlacsphotography.com/wp-content/uploads/2020/03/MG_3442_2.jpg",
+            Experiencia = new() { "Contadora en Empresa Z", "Supervisora en Empresa A" },
+            Educacion = new() { "Lic. en Diseño", "Diplomado en Marketing" },
+            Email = "maria@example.com",
+            Telefono = "+52 9876543210"
+        }
+    };
+
+    public class Cliente
+    {
+        public string Nombre { get; set; } = "";
+        public string Profesion { get; set; } = "";
+        public string FotoUrl { get; set; } = "";
+        public List<string> Experiencia { get; set; } = new();
+        public List<string> Educacion { get; set; } = new();
+        public string Email { get; set; } = "";
+        public string Telefono { get; set; } = "";
+    }
+}

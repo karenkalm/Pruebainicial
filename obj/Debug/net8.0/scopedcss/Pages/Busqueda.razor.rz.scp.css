@@ -1,0 +1,34 @@
+.search-input[b-xjvxg3o9ma] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.clientes-container[b-xjvxg3o9ma] {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.cv-card[b-xjvxg3o9ma] {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.cv-left img[b-xjvxg3o9ma] {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.cv-right[b-xjvxg3o9ma] {
+    padding: 15px;
+}
