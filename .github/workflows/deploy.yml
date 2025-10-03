@@ -1,6 +1,31 @@
-﻿namespace necesitoayudalanetayanoquierovivi.github.workflows
-{
-    public class deploy
-    {
-    }
-}
+﻿name: Deploy Blazor Wasm to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Si tu rama principal es 'master', cámbialo aquí.
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    # 1. Configurar .NET
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x' # ✅ CORREGIDO: Usando '8.0.x' para .NET 8
+
+    # 2. Publicar la aplicación Blazor
+    - name: Publish Blazor project
+      run: dotnet publish  necesitoayudalanetayanoquierovivi.csproj -c Release -o release --nologo
+    
+    # 3. Desplegar los archivos a la rama gh-pages (el destino final)
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: release/wwwroot      # Directorio de salida de la publicación
+        publish_branch: gh-pages        # Rama que usaremos para Pages
